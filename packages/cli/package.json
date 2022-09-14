@@ -1,6 +1,6 @@
 {
   "name": "reactjs-notebook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -20,7 +20,7 @@
     "@reactjs-notebook/local-client": "^1.0.0"
   },
   "devDependencies": {
-    "@reactjs-notebook/local-api": "^1.0.0",
+    "@reactjs-notebook/local-api": "^1.0.1",
     "@types/node": "^18.7.16",
     "commander": "^9.4.0",
     "esbuild": "0.8.26",
