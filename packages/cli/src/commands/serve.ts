@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import { serve } from '@reactjs-notebook/local-api';
 import path from 'path';
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = true;
 
 interface LocalApiError {
   code: string;
@@ -24,9 +24,9 @@ export const serveCommand = new Command()
         dir,
         !isProduction
       );
-      console.log(`
-        Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file
-      `);
+      console.log(
+        `Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file`
+      );
     } catch (err) {
       if (isLocalApiError(err)) {
         if (err.code === 'EADDRINUSE') {
